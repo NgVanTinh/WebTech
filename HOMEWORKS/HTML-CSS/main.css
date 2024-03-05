@@ -1,0 +1,289 @@
+body {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.block {
+    min-height: 200px;
+    height: auto;
+    width: auto;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1%;
+}
+
+.top-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.-left-sectoption {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-basis: 25%;
+}
+
+.top-left-section {
+    width: 400px;
+}
+
+.top-right-section {
+    flex: 1;
+}
+
+.top-left__top-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left__bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 29px 0px;
+    margin-top: 10px;
+}
+
+.img-cover img {
+    border-radius: 1%;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.profile-image {
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avt {
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.profile-container {
+    margin-top: 75px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.profile-info {
+    font-size: 14px;
+}
+
+.profile-image {
+    transform: translateX(24px);
+    border-radius: 50%;
+    background-color: white;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------- */
+#tab1 {
+    margin-top: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    /* box-sizing: border-box;/ */
+}
+
+.table-tab1 {
+    border: 0.5px solid rgb(176, 172, 172);
+    /* border-bottom: ; */
+    /* border-bottom: ; */
+    border-collapse: collapse;
+    font-weight: normal
+}
+
+#tab1 label {
+    padding: 3px 10px;
+    text-align: center;
+    list-style: none;
+}
+
+#tab1 label {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table-tab1>th :hover {
+    color: rgb(5, 162, 246);
+}
+
+#tab1-noidung {
+    margin-right: 20px;
+}
+
+#tab1-noidung>div {
+    display: none;
+}
+
+#tab1-noidung input {
+    display: none;
+}
+
+#tab1-noidung input :focus {
+    color: brown;
+}
+
+#tab1-noidung>input:checked+div {
+    display: block;
+}
+
+.abc a :focus {
+    color: brown;
+}
+
+#hr1 {
+    width: 225px;
+    margin-top: -16px;
+}
+
+#tab2 {
+    margin-top: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    /* box-sizing: border-box;/ */
+}
+
+.table-tab2 {
+    border: 0.5px solid rgb(176, 172, 172);
+    /* border-bottom: ; */
+    /* border-bottom: ; */
+    border-collapse: collapse;
+    font-weight: normal
+}
+
+#tab2 label {
+    /* border:  solid black; */
+    /* display: inline-block;
+         box-sizing: border-box; */
+    padding: 3px 10px;
+    /* margin-top: 5px; */
+    text-align: center;
+    list-style: none;
+}
+
+#tab2 label {
+    display: inline-block;
+    text-decoration: none;
+    /* color: black; */
+    cursor: pointer;
+}
+
+.table-tab2 label :focus-within {
+    color: brown;
+}
+
+.table-tab2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.table-tab2 a :focus {
+    color: brown;
+}
+
+#hr2 {
+    width: 600px;
+    margin-top: -5.4px;
+}
+
+#tab2 {
+    margin-top: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    /* box-sizing: border-box;/ */
+}
+
+.table-tab2 {
+    border: 0.5px solid rgb(176, 172, 172);
+    /* border-bottom: ; */
+    /* border-bottom: ; */
+    border-collapse: collapse;
+    font-weight: normal
+}
+
+#tab2 label {
+    /* border:  solid black; */
+    /* display: inline-block;
+         box-sizing: border-box; */
+    padding: 3px 10px;
+    /* margin-top: 5px; */
+    text-align: center;
+    list-style: none;
+}
+
+#tab2 label {
+    display: inline-block;
+    text-decoration: none;
+    /* color: black; */
+    cursor: pointer;
+}
+
+#hr2 {
+    width: 600px;
+    margin-top: -5.4px;
+}
+
+#tab2-noidung {
+    margin-left: 50px;
+}
+
+#tab2-noidung>div {
+    display: none;
+}
+
+#tab2-noidung input {
+    display: none;
+}
+
+/* #tab2-noidung input :focus {
+    color: brown;
+} */
+
+#tab2-noidung>input:checked+div {
+    display: block;
+}
+
+.table-tab2>th :hover {
+    color: rgb(0, 208, 255);
+}
+
+/* #no-border > table,  #no-border > tr,  #no-border > th{
+         text-align: left;
+      } */
+.table3 {
+    /* border: 0.5px solid rgb(154, 151, 151); */
+    /* border-bottom: ; */
+    /* border-bottom: ; */
+    /* border-collapse: collapse; */
+    font-weight: normal;
+    text-align: left;
+}
+
+.table3 th {
+    width: 250px;
+}
+
+.table3 tr {
+    height: 27px;
+}
