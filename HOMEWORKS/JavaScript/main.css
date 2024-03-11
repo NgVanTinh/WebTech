@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup_popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffffee;
+}
+
+.all_items {
+    width: 480px;
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 4px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popup_header {
+    border-bottom: 1px solid #dddfe2;
+    padding: 20px;
+    position: relative;
+}
+
+.popup_header b {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #606060;
+    cursor: pointer;
+}
+
+.popup_header h2 {
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.popup_header span {
+    font-size: 15px;
+    color: #606060;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup_form {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.inputs_box {
+    width: 100%;
+}
+
+.inputs_box input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #c5c7ca;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.inputs_box .select_date,
+.select_gender_custom {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #c5c7ca;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    color: #606060;
+    justify-content: left;
+}
+
+.inputs_box span {
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 15px; */
+    border: 1px solid #c5c7ca;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.inputs_box span {
+    /* display: flex; */
+    flex-direction: row-reverse;
+}
+
+.inputs_box label {
+    margin-right: 30px;
+}
+
+.inputs_box .gender {
+    position: relative;
+    top: 5px;
+    width: 12.4%;
+}
+
+.inputs_box #male {
+    position: relative;
+    left: 16px;
+}
+
+.inputs_box #female {
+    position: relative;
+    left: 18px;
+}
+
+.inputs_box .select_gender_custom {
+    margin-top: 15px;
+}
+
+.policy {
+    margin-top: 15px;
+}
+
+.policy p {
+    font-size: 12px;
+    font-weight: 500px;
+    color: #606060;
+}
+
+.policy a {
+    color: rgba(7, 43, 90, 0.712);
+}
+
+.sign_btn {
+    width: 250px;
+    padding: 12px 30px;
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #36a420;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input_error {
+    border: 1px solid red;
+    background-image: url('/warning.jpg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.error_img {
+    background-image: url(/5HU6e13t4c9.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -12px -63px;
+    height: 22px;
+    right: 225px;
+    top: 147px;
+    width: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.error_mess {
+    display: none;
+    position: absolute;
+    border: 1px solid rgba(139, 3, 0, .75);
+    border-radius: 4px;
+    background-color: #be4b49;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+.fail_email {
+    display: none;
+    position: absolute;
+    /* border: 1px solid rgba(73, 5, 5, 0.901); */
+    border-radius: 4px;
+    background-color: #be4b49;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+.ten {
+    margin-right: 130px;
+    top: 140px;
+}
+
+.email,
+.fail_email,
+.pw {
+    width: 125px;
+    margin-left: -145px;
+}
+
+#custom_input {
+    display: none;
+}

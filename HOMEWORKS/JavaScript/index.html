@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section>
+        <container class="signup_popup">
+            <div class="all_items">
+
+                <div class="popup_header">
+                    <b class='bx bx-x'>x</b>
+                    <h2>Đăng ký</h2>
+                    <span>Nhanh chóng và dễ dàng</span>
+                </div>
+
+                <form action="#" class="popup_form">
+                    <div class="inputs_box flex">
+                        <input type="text" name="ho" placeholder="Họ">
+                        <div class="error_mess ten" id="ho" >
+                            Tên bạn là gì?
+                        </div>
+                        <input type="text" placeholder="Tên" name="ten">
+                    </div>
+                    
+                    <div class="error_mess ho" >
+                        Tên bạn là gì?
+                    </div>
+                    <div class="error_mess email">Bạn sẽ sử dụng thông tin này khi đăng nhập và khi cần đặt lại mật khẩu</div>
+                    <div class="fail_email">Vui lòng nhập lại số di động hoặc địa chỉ email hợp lệ</div>
+                    <div class="inputs_box flex">
+                        <input type="text" name="email" id="email" placeholder="Số di động hoặc email" >
+                    </div>
+                    <div class="error_mess pw">Nhập mật khẩu có tối thiểu 6 ký tự và bao gồm số, chữ cái và dấu chấm câu (như ! và &)</div>
+                    <div class="inputs_box flex">
+                        <input type="password" name="pw" placeholder="Mật khẩu" >
+                    </div>
+                    <div class="birthday" >Ngày sinh</div>
+                    <div class="inputs_box flex">
+                        <select class="select_date" id="day" name="ngay"></select>
+
+                        <select class="select_date" id="month" name="month"></select>
+
+                        <select class="select_date" id="year"></select>
+                    </div>
+
+                    <div class="h-gender">Giới tính</div>
+                    <div class="inputs_box flex">
+                        <span>
+                            <input type="radio" id="female" class="gender" name="gender">
+                            <label for="female">Nữ</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" id="male" class="gender" name="gender">
+                            <label for="male">Nam</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" id="custom" class="gender" name="gender">
+                            <label for="custom" id="customer">Tùy chỉnh</label>
+                        </span>
+                    </div>
+
+                    <div id="custom_input">
+                        <div class="inputs_box flex">
+                            <select class="select_gender_custom">
+                                <option value="">Chọn danh xưng</option>
+                                <option value="">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!"</option>
+                                <option value="">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!" </option>
+                                <option value="">Họ: "Chúc họ ấy sinh nhật vui vẻ!"</option>
+                            </select>
+                        </div>
+                        <p>Danh xưng của bạn hiển thị với tất cả mọi người</p>
+                        <div class="inputs_box flex">
+                            <input type="text" placeholder="Giới tính (không bắt buộc)">
+                        </div>
+                    </div>
+
+                    <div class="policy">
+                        <p>
+                            Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.
+                            <a href="#">Tìm hiểu thêm.</a> <br>
+                            <br>
+                            Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính
+                                sách quyền riêng tư</a> và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn
+                            có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.
+                        </p>
+                    </div>
+
+                    <button class="sign_btn">Đăng ký</button>
+                </form>
+
+            </div>
+        </container>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
