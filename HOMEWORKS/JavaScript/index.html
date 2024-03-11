@@ -21,35 +21,45 @@
 
                 <form action="#" class="popup_form">
                     <div class="inputs_box flex">
-                        <input type="text" name="ho" placeholder="Họ">
-                        <div class="error_mess ten" id="ho" >
+                        <input type="text" id="Ho" name="ho" placeholder="Họ">
+                        <div class="error_mess ten" id="ho">
                             Tên bạn là gì?
                         </div>
-                        <input type="text" placeholder="Tên" name="ten">
+                        <input type="text" id="Ten" placeholder="Tên" name="ten">
                     </div>
-                    
-                    <div class="error_mess ho" >
+
+                    <div class="error_mess ho">
                         Tên bạn là gì?
                     </div>
-                    <div class="error_mess email">Bạn sẽ sử dụng thông tin này khi đăng nhập và khi cần đặt lại mật khẩu</div>
+                    <div class="error_mess email">Bạn sẽ sử dụng thông tin này khi đăng nhập và khi cần đặt lại mật khẩu
+                    </div>
                     <div class="fail_email">Vui lòng nhập lại số di động hoặc địa chỉ email hợp lệ</div>
                     <div class="inputs_box flex">
-                        <input type="text" name="email" id="email" placeholder="Số di động hoặc email" >
+                        <input type="text" name="email" id="email" placeholder="Số di động hoặc email">
                     </div>
-                    <div class="error_mess pw">Nhập mật khẩu có tối thiểu 6 ký tự và bao gồm số, chữ cái và dấu chấm câu (như ! và &)</div>
+                    <div class="error_mess pw">Nhập mật khẩu có tối thiểu 6 ký tự và bao gồm số, chữ cái và dấu chấm câu
+                        (như ! và &)</div>
                     <div class="inputs_box flex">
-                        <input type="password" name="pw" placeholder="Mật khẩu" >
+                        <input type="password" id="password" name="pw" placeholder="Mật khẩu">
                     </div>
-                    <div class="birthday" >Ngày sinh</div>
-                    <div class="inputs_box flex">
-                        <select class="select_date" id="day" name="ngay"></select>
+                    <div class="birthday" style="margin-bottom: 10px;">Ngày sinh</div>
+                    <div class="error_mess err_birthday">Vui lòng chọn ngày sinh</div>
+                    <div class="inputs_box flex" id="bd_select_box">
+                        <select class="select_date" id="day" name="date">
+                            <option value="">Chọn ngày</option>
+                        </select>
 
-                        <select class="select_date" id="month" name="month"></select>
+                        <select class="select_date" id="month" name="date">
+                            <option value="">Chọn tháng</option>
+                        </select>
 
-                        <select class="select_date" id="year"></select>
+                        <select class="select_date" id="year" name="date">
+                            <option value="">Chọn năm</option>
+                        </select>
                     </div>
 
-                    <div class="h-gender">Giới tính</div>
+                    <div class="header_gender" style="margin-bottom: 10px;">Giới tính</div>
+                    <div class="error_mess err_gender">Vui lòng chọn giới tính</div>
                     <div class="inputs_box flex">
                         <span>
                             <input type="radio" id="female" class="gender" name="gender">
@@ -68,12 +78,13 @@
                     </div>
 
                     <div id="custom_input">
-                        <div class="inputs_box flex">
-                            <select class="select_gender_custom">
-                                <option value="">Chọn danh xưng</option>
-                                <option value="">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!"</option>
-                                <option value="">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!" </option>
-                                <option value="">Họ: "Chúc họ ấy sinh nhật vui vẻ!"</option>
+                        <div class="inputs_box flex ">
+                            <div class="error_mess err_customer">Vui lòng chọn danh xưng</div>
+                            <select class="select_gender_custom" id="select_gender_custom">
+                                <option value="0">Chọn danh xưng</option>
+                                <option value="1">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!"</option>
+                                <option value="2">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!" </option>
+                                <option value="3">Họ: "Chúc họ ấy sinh nhật vui vẻ!"</option>
                             </select>
                         </div>
                         <p>Danh xưng của bạn hiển thị với tất cả mọi người</p>

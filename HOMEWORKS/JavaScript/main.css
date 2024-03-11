@@ -166,25 +166,11 @@
 }
 
 .input_error {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url('/warning.jpg');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: right center;
-}
-
-
-.error_img {
-    background-image: url(/5HU6e13t4c9.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: -12px -63px;
-    height: 22px;
-    right: 225px;
-    top: 147px;
-    width: 30px;
-    position: absolute;
-    display: inline-block;
 }
 
 .error_mess {
@@ -216,9 +202,15 @@
 
 .email,
 .fail_email,
-.pw {
+.pw,
+.err_birthday,
+.err_gender {
     width: 125px;
     margin-left: -145px;
+}
+
+.err_customer {
+    margin-left: -610px;
 }
 
 #custom_input {
